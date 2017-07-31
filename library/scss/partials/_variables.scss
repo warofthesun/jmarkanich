@@ -1,0 +1,49 @@
+/******************************************************************
+Site Name: Jennifer Markanich
+Author: Dan Brown
+
+Stylesheet: Variables
+
+******************************************************************/
+
+/*********************
+COLORS
+*********************/
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #323944;
+$white:             #fff;
+
+$light-gray:        #f8f9fa;
+$gray:              #eaedf2;
+$text-color:        #4A4A4A;
+$meta-gray:         #9fa6b4;
+
+$tan:               #D8CFC0;
+$green:             #595550;
+$brown:             #57403F;
+
+$light:             #D8CFC0;
+$medium:            #595550;
+$dark:              #57403F;
+$accent:            #B7A993;
+
+$bones-pink:        #f01d4f;
+$blue:              #2980b9;
+
+$link-color:        $green;
+$link-hover:        darken($link-color, 20%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
