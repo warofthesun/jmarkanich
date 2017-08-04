@@ -33,6 +33,9 @@ body {
 }
 
 .navigation_image {
+	position: relative;
+	text-decoration: none;
+	background-color: #999;
 	img {
 		width: 100%;
 	}
@@ -40,6 +43,17 @@ body {
 
 .navigation_image:last-child {
 	margin-right: 0;
+}
+
+.navigation_text {
+	position: relative;
+	text-align: center;
+	top: -100px;
+	font-family: $serif;
+	font-size: 36px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -179,7 +193,7 @@ HEADER STYLES
 		text-align: center;
 
 		img {
-			width: 600px;
+			width: 100%;
 			height: auto;
 		}
 

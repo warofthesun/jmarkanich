@@ -251,6 +251,9 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+#logo img {
+  width: 600px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

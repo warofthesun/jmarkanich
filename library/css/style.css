@@ -1376,11 +1376,25 @@ body {
   width: 100%;
   height: auto; }
 
-.navigation_image img {
-  width: 100%; }
+.navigation_image {
+  position: relative;
+  text-decoration: none;
+  background-color: #999; }
+  .navigation_image img {
+    width: 100%; }
 
 .navigation_image:last-child {
   margin-right: 0; }
+
+.navigation_text {
+  position: relative;
+  text-align: center;
+  top: -100px;
+  font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #333; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1494,7 +1508,7 @@ HEADER STYLES
   margin: 0.75em 0;
   text-align: center; }
   #logo img {
-    width: 600px;
+    width: 100%;
     height: auto; }
   #logo a {
     color: #fff; }
@@ -2000,6 +2014,9 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  #logo img {
+    width: 600px; }
+
   /*********************
   NAVIGATION STYLES
   *********************/

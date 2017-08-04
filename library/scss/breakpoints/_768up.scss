@@ -31,9 +31,15 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+}
 
-	#logo {}
+	#logo {
+
+		img {
+			width: 600px;
+		}
+	}
 
 /*********************
 NAVIGATION STYLES
