@@ -9,42 +9,46 @@
 						$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 					?>
 						<a href="#" class="d-1of3 m-all">
-
-							<div class="navigation_image">
-								<img src="<?php echo $imageThumbURL;?>">
-							</div>
-							<div class="navigation_text">
-								<?php echo the_field('first_navigation_text'); ?>
+							<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
+								<div class="navigation_image-overlay">
+									<div class="navigation_text">
+										<?php echo the_field('first_navigation_text'); ?>
+									</div>
+								</div>
 							</div>
 						</a>
 
-						<a href="#" class="d-1of3 m-all navigation_image">
-							<?php
-								$imageArray = get_field('second_navigation_image'); // Array returned by Advanced Custom Fields
-								$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
-								$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
-							?>
-							<div>
-								<img src="<?php echo $imageThumbURL;?>">
-							</div>
-							<div class="navigation_text">
-								<?php echo the_field('second_navigation_text'); ?>
-							</div>
+						<?php
+							$imageArray = get_field('second_navigation_image'); // Array returned by Advanced Custom Fields
+							$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
+							$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+						?>
+							<a href="#" class="d-1of3 m-all">
+								<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
+									<div class="navigation_image-overlay">
+									<div class="navigation_text">
+										<?php echo the_field('second_navigation_text'); ?>
+									</div>
+									</div>
+								</div>
+							</a>
 
-						</a>
-						<a class="d-1of3 m-all navigation_image">
 							<?php
 								$imageArray = get_field('third_navigation_image'); // Array returned by Advanced Custom Fields
 								$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
 								$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 							?>
-							<div>
-								<img src="<?php echo $imageThumbURL;?>">
-							</div>
-							<div class="navigation_text">
-								<?php echo the_field('third_navigation_text'); ?>
-							</div>
-						</a>
+								<a href="#" class="d-1of3 m-all">
+									<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
+										<div class="navigation_image-overlay">
+											<div class="navigation_text">
+												<?php echo the_field('third_navigation_text'); ?>
+											</div>
+										</div>
+									</div>
+								</a>
+
+
 				</div>
 
 			</div>

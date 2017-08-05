@@ -33,12 +33,30 @@ body {
 }
 
 .navigation_image {
-	position: relative;
-	text-decoration: none;
-	background-color: #999;
-	img {
-		width: 100%;
-	}
+		position: relative;
+    text-decoration: none;
+    height: 415px;
+    background-size: cover;
+
+		&-overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.2);
+			transition: all .5s;
+			-webkit-transition: all .5s;
+
+			&:hover {
+				background-color: rgba(255,255,255,0.4);
+
+				.navigation_text {
+
+					color: $brown;
+
+
+				}
+			}
+		}
 }
 
 .navigation_image:last-child {
@@ -46,14 +64,18 @@ body {
 }
 
 .navigation_text {
-	position: relative;
+	position: absolute;
 	text-align: center;
-	top: -100px;
 	font-family: $serif;
 	font-size: 36px;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #333;
+	bottom: -80%;
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
 /********************
 WORDPRESS BODY CLASSES
