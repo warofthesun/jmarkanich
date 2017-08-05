@@ -1,9 +1,10 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
-					<?php $my_query = new WP_Query('page_id=22');
-					while ($my_query->have_posts()) : $my_query->the_post();
-					$do_not_duplicate = $post->ID;?>
+					<div class="footer_info">
+							<?php $my_query = new WP_Query('page_id=22');
+							while ($my_query->have_posts()) : $my_query->the_post();
+							$do_not_duplicate = $post->ID;?>
 
 					    <div class="entry">
 
@@ -40,8 +41,8 @@
 
 					 <?php endwhile; ?>
 
-					<p class="source-org copyright" style="text-align:center">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
+						<p class="source-org copyright" style="text-align:center">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					</div>
 				</div>
 
 			</footer>

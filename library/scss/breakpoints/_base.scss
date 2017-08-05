@@ -945,7 +945,28 @@ FOOTER STYLES
 	.entry {
 		text-align: center;
 	}
-	
+
+	.footer_info {
+		margin-top: 4em;
+		margin-bottom: 2em;
+
+	}
+
+	.footer_contact {
+		margin:  2em 0;
+		line-height: 3em;
+		color: $green-lt;
+
+		a {
+			text-decoration: none;
+			color: $green-lt;
+
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+
 	a.fa {
 		border: 1px solid;
     width: 40px;
@@ -956,7 +977,7 @@ FOOTER STYLES
     line-height: 39px;
     text-decoration: none;
     margin-right: 1em;
-		color: $green;
+		color: $green-lt;
 		transition: all .5s;
 
 		&:hover {

@@ -1913,6 +1913,18 @@ FOOTER STYLES
   color: #57403F; }
   .footer .entry {
     text-align: center; }
+  .footer .footer_info {
+    margin-top: 4em;
+    margin-bottom: 2em; }
+  .footer .footer_contact {
+    margin: 2em 0;
+    line-height: 3em;
+    color: #979797; }
+    .footer .footer_contact a {
+      text-decoration: none;
+      color: #979797; }
+      .footer .footer_contact a:hover {
+        color: #595550; }
   .footer a.fa {
     border: 1px solid;
     width: 40px;
@@ -1923,7 +1935,7 @@ FOOTER STYLES
     line-height: 39px;
     text-decoration: none;
     margin-right: 1em;
-    color: #595550;
+    color: #979797;
     transition: all .5s; }
     .footer a.fa:hover {
       color: #fff;
