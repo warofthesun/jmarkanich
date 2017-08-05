@@ -2,7 +2,7 @@
 
 				<div id="inner-footer" class="wrap cf">
 					<div class="footer_info">
-							<?php $my_query = new WP_Query('page_id=22');
+							<?php $my_query = new WP_Query('pagename=footer');
 							while ($my_query->have_posts()) : $my_query->the_post();
 							$do_not_duplicate = $post->ID;?>
 
