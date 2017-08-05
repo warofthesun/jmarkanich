@@ -1397,7 +1397,7 @@ body {
   margin-right: 0; }
 
 .navigation_text {
-  position: absolute;
+  position: relative;
   text-align: center;
   font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
   font-size: 36px;
