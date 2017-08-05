@@ -1397,7 +1397,7 @@ body {
 .navigation_image:last-child {
   margin-right: 0; }
 
-.navigation_text {
+.navigation_text, .portfolio_text {
   position: relative;
   text-align: center;
   font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
@@ -1408,12 +1408,32 @@ body {
   bottom: -80%;
   width: 100%;
   transition: all .5s;
-  -webkit-transition: all .5s; }
+  -webkit-transition: all .5s;
+  text-decoration: none; }
 
 .divider {
   border-top: 0.5px solid #57403F;
   margin-top: 4em;
   margin-bottom: 3em; }
+
+.portfolio_page {
+  text-decoration: none; }
+
+.portfolio_image {
+  height: 550px;
+  position: relative; }
+  .portfolio_image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+    -webkit-transition: all .5s; }
+    .portfolio_image-overlay:hover {
+      background-color: rgba(255, 255, 255, 0.4); }
+      .portfolio_image-overlay:hover .portfolio_text {
+        text-shadow: 0px 0px 0px #fff;
+        color: #57403F; }
 
 /********************
 WORDPRESS BODY CLASSES
