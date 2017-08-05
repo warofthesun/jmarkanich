@@ -2,6 +2,7 @@
 <!--front-page-->
 			<div id="content">
 				<div class="hero_image"><a href="<?php the_field('hero_image_link'); ?>"><img src="<?php the_field('hero_image'); ?>"></a></div>
+				<div class="divider"></div>
 				<div id="inner-content" class="wrap cf">
 					<?php
 						$imageArray = get_field('first_navigation_image'); // Array returned by Advanced Custom Fields

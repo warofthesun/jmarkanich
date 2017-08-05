@@ -1391,6 +1391,7 @@ body {
     .navigation_image-overlay:hover {
       background-color: rgba(255, 255, 255, 0.4); }
       .navigation_image-overlay:hover .navigation_text {
+        text-shadow: 0px 0px 0px #fff;
         color: #57403F; }
 
 .navigation_image:last-child {
@@ -1408,6 +1409,11 @@ body {
   width: 100%;
   transition: all .5s;
   -webkit-transition: all .5s; }
+
+.divider {
+  border-top: 0.5px solid #57403F;
+  margin-top: 4em;
+  margin-bottom: 3em; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1904,7 +1910,26 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: #fff;
-  color: #f8f9fa; }
+  color: #57403F; }
+  .footer .entry {
+    text-align: center; }
+  .footer a.fa {
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 39px;
+    text-decoration: none;
+    margin-right: 1em;
+    color: #595550;
+    transition: all .5s; }
+    .footer a.fa:hover {
+      color: #fff;
+      background-color: #595550; }
+  .footer a.fa:last-child {
+    margin-right: 0; }
 
 /*
 if you checked out the link above:

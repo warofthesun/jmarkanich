@@ -1,24 +1,46 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
+					<?php $my_query = new WP_Query('page_id=22');
+					while ($my_query->have_posts()) : $my_query->the_post();
+					$do_not_duplicate = $post->ID;?>
 
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
+					    <div class="entry">
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+								<?php
+
+								// check if the repeater field has rows of data
+								if( have_rows('social_platform') ):
+
+								// loop through the rows of data
+									while ( have_rows('social_platform') ) : the_row();
+
+
+
+										// display a sub field value
+									?>
+											<a href="http://<?php the_sub_field('social_link') ?>" class="fa fa-<?php the_sub_field('social_icon')?>" target="_blank"></a>
+								<?php
+
+									endwhile;
+
+								else :
+
+									// no rows found
+
+								endif;
+
+								?>
+								<div class="footer_contact">
+								<span class="email">email: <a href="mailto:<?php the_field('email_address') ?>"><?php the_field('email_address') ?></a></span> |
+								<span class="phone">phone: <?php the_field('phone_number') ?></span>
+								<div class="address"><?php the_field('address') ?></div>
+								</div>
+					    </div>
+
+					 <?php endwhile; ?>
+
+					<p class="source-org copyright" style="text-align:center">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 				</div>
 
