@@ -1040,9 +1040,6 @@ and it will create a button dependant on those variables.
   .white-btn:active {
     background-color: #4c4844; }
 
-.white-btn:not(:first-child) {
-  border-left: 0px; }
-
 .blue-btn, .comment-reply-link, #submit {
   background-color: #fff; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
@@ -1467,6 +1464,28 @@ a.return {
   .page-title img {
     width: 80px; }
 
+.title_buttons .white-btn:not(:first-child) {
+  border-left: 0px; }
+
+.customer_name {
+  font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+  color: #57403F;
+  font-size: 1.7em; }
+
+.project_name {
+  font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+  color: #57403F;
+  font-style: italic;
+  font-size: 1.5em;
+  text-decoration: none; }
+
+.testimonial_type {
+  padding-bottom: 3em;
+  border-bottom: 1px solid #ccc; }
+
+.teaser_images {
+  padding-top: 2em; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1639,7 +1658,6 @@ POSTS & CONTENT STYLES
 
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
   margin-bottom: 1.5em; }
   .hentry header {
     padding: 1.5em;

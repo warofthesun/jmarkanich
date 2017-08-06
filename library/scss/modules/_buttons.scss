@@ -63,10 +63,6 @@ and it will create a button dependant on those variables.
 
 } // end white button
 
-.white-btn:not(:first-child) {
-  border-left: 0px;
-}
-
 .blue-btn {
   @extend %btn; // here we load the btn defaults
   background-color: #fff;
