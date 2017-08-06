@@ -1435,6 +1435,23 @@ body {
         text-shadow: 0px 0px 0px #fff;
         color: #57403F; }
 
+.portfolio_page {
+  text-align: center; }
+
+.gallery-item {
+  float: left;
+  margin-right: 1.4em; }
+
+.gallery-caption {
+  display: none; }
+
+a.return {
+  font-size: 24px;
+  text-decoration: none;
+  color: #979797; }
+  a.return span {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1608,14 +1625,12 @@ POSTS & CONTENT STYLES
 .hentry {
   background-color: #fff;
   border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc; }
+  margin-bottom: 1.5em; }
   .hentry header {
-    border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
-  .hentry footer {
     padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
+    padding-bottom: 0; }
+  .hentry footer {
+    padding: 1.5em; }
     .hentry footer p {
       margin: 0; }
 

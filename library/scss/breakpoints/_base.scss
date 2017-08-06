@@ -110,9 +110,32 @@ body {
 			}
 		}
 	}
-
-
 }
+
+.portfolio_page {
+	text-align: center;
+}
+
+.gallery-item {
+	float: left;
+	margin-right: 1.4em;
+}
+
+.gallery-caption {
+	display: none;
+}
+
+a.return {
+	font-size: 24px;
+	text-decoration: none;
+	color: $green-lt;
+
+	span {
+		font-family: $sans-serif;
+	}
+}
+
+
 
 
 /********************
@@ -367,16 +390,14 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
 
 			header {
-				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
+				padding-bottom: 0;
 			}
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;
