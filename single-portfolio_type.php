@@ -26,7 +26,7 @@
 
 									<p><?php the_field('project_introduction'); ?></p>
 									<?php the_field('project_gallery'); ?>
-									<a href="#" class="fa fa-arrow-circle-left return"><span> &nbsp;Return to Portfolio</span></a>
+									<a href="/portfolio" class="fa fa-arrow-circle-left return"><span> &nbsp;Return to Portfolio</span></a>
 
 
 								</section> <!-- end article section -->

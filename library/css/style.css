@@ -1462,6 +1462,11 @@ a.return {
   width: 50%;
   float: left; }
 
+.page-title {
+  padding: 0; }
+  .page-title img {
+    width: 80px; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
