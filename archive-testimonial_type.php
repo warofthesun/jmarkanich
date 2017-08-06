@@ -9,58 +9,67 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
+						<main id="main" class="m-all t-3of3 d-3of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-					<main id="main" class="m-all t-3of3 d-7of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
-						<h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
-
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), get_author_posts_url( get_the_author_meta( 'ID' ) ));
-									?></p>
+									<h1 class="page-title m-all t-2of3 d-2of3"><?php post_type_archive_title(); ?></h1>
+									<div class="title_buttons m-all t-1of3 d-1of3">
+										<?php $my_query = new WP_Query('pagename=title buttons');
+											while ($my_query->have_posts()) : $my_query->the_post();
+											$do_not_duplicate = $post->ID;
 
+										// check if the repeater field has rows of data
+										if( have_rows('title_buttons') ):
+
+										// loop through the rows of data
+											while ( have_rows('title_buttons') ) : the_row();
+
+											// display a sub field value
+										?>
+										<a href="/<?php the_sub_field('title_button') ?>" class="white-btn"><?php the_sub_field('title_button') ?></a>
+									<?php
+										endwhile;
+									else :
+										// no rows found
+									endif;
+									?>
+									</div>
 								</header>
-
-								<section class="entry-content cf">
-
-									<?php the_content(); ?>
+							<?php endwhile; ?>
+							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+								<section class="entry-content cf" itemprop="articleBody">
+									<?php
+										// the content (pretty self explanatory huh)
+										the_content();
+									?>
 
 								</section>
 
-								<footer class="article-footer">
-
-								</footer>
-
 							</article>
 
-							<?php endwhile; ?>
-
-									<?php bones_page_navi(); ?>
-
-							<?php else : ?>
-
-									<article id="post-not-found" class="hentry cf">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the custom posty type archive template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+							<?php endwhile; else : ?>
 
 							<?php endif; ?>
 
 						</main>
-
+						<?php
+							$imageArray = get_field('image_one'); // Array returned by Advanced Custom Fields
+							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+						?>
+						<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
+						<?php
+							$imageArray = get_field('image_two'); // Array returned by Advanced Custom Fields
+							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+						?>
+						<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
+						<?php
+							$imageArray = get_field('image_three'); // Array returned by Advanced Custom Fields
+							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+						?>
+						<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
 				</div>
 
 			</div>
