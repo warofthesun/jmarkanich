@@ -995,20 +995,6 @@ you can just remove this stylesheet.
   border-color: #deeaae;
   background: #e6efc2; }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Button Styles
-
-Buttons are a pretty important part of your site's style, so it's
-important to have a consistent baseline for them. Use this stylesheet
-to create all kinds of buttons.
-
-Helpful Links:
-http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
-
-******************************************************************/
 /*********************
 BUTTON DEFAULTS
 We're gonna use a placeholder selector here
@@ -1019,26 +1005,27 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.white-btn, .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #595550;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
+  color: #979797;
+  font-size: 1em;
   font-weight: normal;
-  padding: 0 24px;
-  border-radius: 4px;
-  border: 1px solid #595550;
+  padding: .5em 2em;
+  border: 1px solid #979797;
   cursor: pointer;
-  background-color: #fff; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    color: #fff;
+  background-color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+  .white-btn:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .white-btn:focus, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+    color: #fff !important;
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .white-btn:active, .blue-btn:active, .comment-reply-link:active, #submit:active {
     top: 1px; }
 
 /*
@@ -1046,12 +1033,22 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
+.white-btn {
+  background-color: #fff; }
+  .white-btn:hover, .white-btn:focus {
+    background-color: #4e4b46; }
+  .white-btn:active {
+    background-color: #4c4844; }
+
+.white-btn:not(:first-child) {
+  border-left: 0px; }
+
 .blue-btn, .comment-reply-link, #submit {
-  background-color: #2980b9; }
+  background-color: #fff; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #2574a8; }
+    background-color: #4e4b46; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #2472a4; }
+    background-color: #4c4844; }
 
 /******************************************************************
 Site Name:
@@ -1363,6 +1360,12 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+#inner-header.inner {
+  margin-top: 2em; }
+
+.title_buttons {
+  text-align: right; }
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -1451,6 +1454,13 @@ a.return {
   color: #979797; }
   a.return span {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.sidebar-image {
+  margin-top: 2em; }
+
+.title_buttons .white-btn {
+  width: 50%;
+  float: left; }
 
 /********************
 WORDPRESS BODY CLASSES

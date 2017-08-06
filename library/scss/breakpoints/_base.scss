@@ -14,6 +14,13 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+#inner-header.inner {
+	margin-top: 2em;
+}
+
+.title_buttons {
+	text-align: right;
+}
 
 body {
 	font-family: $sans-serif;
@@ -135,7 +142,16 @@ a.return {
 	}
 }
 
+.sidebar-image {
+	margin-top: 2em;
+}
 
+.title_buttons {
+  .white-btn {
+    width: 50%;
+    float: left;
+  }
+}
 
 
 /********************
