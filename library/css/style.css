@@ -1421,8 +1421,9 @@ body {
   text-decoration: none; }
 
 .portfolio_image {
-  height: 550px;
-  position: relative; }
+  height: 416px;
+  position: relative;
+  background-size: cover; }
   .portfolio_image-overlay {
     position: absolute;
     width: 100%;
@@ -2315,7 +2316,10 @@ This is for the larger monitors and possibly full screen viewers.
     width: 1340px; }
 
   .navigation_image {
-    height: 415px; } }
+    height: 415px; }
+
+  .portfolio_image {
+    height: 550px; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
