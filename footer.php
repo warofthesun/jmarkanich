@@ -33,7 +33,7 @@
 
 								?>
 								<div class="footer_contact">
-								<span class="email">email: <a href="mailto:<?php the_field('email_address') ?>"><?php the_field('email_address') ?></a></span> |
+								<span class="email">email: <a href="mailto:<?php the_field('email_address') ?>"><?php the_field('email_address') ?></a></span>
 								<span class="phone">phone: <?php the_field('phone_number') ?></span>
 								<div class="address"><?php the_field('address') ?></div>
 								</div>

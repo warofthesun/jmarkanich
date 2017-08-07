@@ -1622,6 +1622,7 @@ ul#menu-main-menu {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0px;
   margin: 0 -5px; }
 
@@ -1632,6 +1633,8 @@ ul#menu-main-menu {
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
+    width: 33%;
+    text-align: center;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -1995,6 +1998,8 @@ FOOTER STYLES
     margin: 2em 0;
     line-height: 3em;
     color: #979797; }
+    .footer .footer_contact .phone {
+      display: block; }
     .footer .footer_contact a {
       text-decoration: none;
       color: #979797; }
@@ -2028,6 +2033,9 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.copyright {
+  color: #979797; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2140,6 +2148,11 @@ you can add resource intensive styles.
     margin-top: 0em;
     height: 215px; }
 
+  .footer .footer_contact .phone {
+    display: inline-block; }
+  .footer .footer_contact .phone::before {
+    content: " | "; }
+
   /*********************
   HEADER STYLES
   *********************/
@@ -2149,6 +2162,9 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
+  ul#menu-main-menu {
+    flex-wrap: nowrap; }
+
   .nav {
     border: 0;
     /* end .menu ul li */
@@ -2158,6 +2174,7 @@ you can add resource intensive styles.
       background: #323944;
       margin-top: 0; }
     .nav li {
+      width: auto;
       float: left;
       position: relative;
       margin: 0 4%;
