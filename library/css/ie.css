@@ -248,6 +248,10 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 760px; }
 
+.navigation_image {
+  margin-top: 0em;
+  height: 215px; }
+
 /*********************
 HEADER STYLES
 *********************/
@@ -376,6 +380,10 @@ be seen on the Desktop.
 ******************************************************************/
 .wrap {
   width: 1040px; }
+
+.navigation_image {
+  margin-top: 0em;
+  height: 315px; }
 
 /*
 you can call the larger styles if you want, but there's really no need

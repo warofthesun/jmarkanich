@@ -17,7 +17,7 @@
 
 								<header class="article-header">
 
-									<div class="page-title m-all t-1of2 d-1of2"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-bug.png"></div>
+									<div class="page-title m-all t-1of2 d-1of2 logo-bug"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-bug.png"></div>
 									<div class="title_buttons m-all t-1of2 d-1of2">
 										<?php $my_query = new WP_Query('pagename=title buttons');
 											while ($my_query->have_posts()) : $my_query->the_post();

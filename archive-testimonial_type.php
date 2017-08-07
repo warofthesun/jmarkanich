@@ -32,46 +32,46 @@
 							endif;
 							?>
 							</div>
-							</header>
+
 							<?php endwhile; ?>
 
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<header class="article-header">
-								<section class="entry-content cf" itemprop="articleBody">
-									<div class="m-all t-1of3 d-1of4">
-										<div class="customer_name"><?php the_field('customer_name') ?></div>
-										<a href="<?php site_url(); ?>/portfolio_item/<?php the_field('portfolio_link') ?>" class="project_name"><?php the_title() ?></a>
+
+									<section class="entry-content cf testimonial" itemprop="articleBody">
+										<div class="m-all t-1of3 d-1of4">
+											<div class="customer_name"><?php the_field('customer_name') ?></div>
+											<a href="<?php site_url(); ?>/portfolio_item/<?php the_field('portfolio_link') ?>" class="project_name"><?php the_title() ?></a>
+										</div>
+										<div class="m-all t-2of3 d-3of4">
+										<?php
+											// the content (pretty self explanatory huh)
+											the_content();
+										?>
+										</div>
+										<div style="width:100%;text-align:center">
+										<a href="<?php site_url(); ?>/portfolio_item/<?php the_field('portfolio_link') ?>" class="white-btn" style="text-align:center;">view project</a>
 									</div>
-									<div class="m-all t-2of3 d-3of4">
-									<?php
-										// the content (pretty self explanatory huh)
-										the_content();
-									?>
+									</section>
+									<div class="teaser_images">
+										<?php
+											$imageArray = get_field('image_one'); // Array returned by Advanced Custom Fields
+											$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+										?>
+										<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
+										<?php
+											$imageArray = get_field('image_two'); // Array returned by Advanced Custom Fields
+											$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+										?>
+										<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
+										<?php
+											$imageArray = get_field('image_three'); // Array returned by Advanced Custom Fields
+											$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
+										?>
+										<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
 									</div>
-									<div style="width:100%;text-align:center">
-									<a href="<?php site_url(); ?>/portfolio_item/<?php the_field('portfolio_link') ?>" class="white-btn" style="text-align:center;">view project</a>
-								</div>
-								</section>
-								<div class="teaser_images">
-									<?php
-										$imageArray = get_field('image_one'); // Array returned by Advanced Custom Fields
-										$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
-									?>
-									<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
-									<?php
-										$imageArray = get_field('image_two'); // Array returned by Advanced Custom Fields
-										$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
-									?>
-									<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
-									<?php
-										$imageArray = get_field('image_three'); // Array returned by Advanced Custom Fields
-										$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
-									?>
-									<div class="m-all t-1of3 d-1of3"><img src="<?php echo $imageThumbURL;?>"></div>
-								</div>
 							</article>
 							<?php endwhile; else : ?>
 

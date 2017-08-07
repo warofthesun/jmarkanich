@@ -20,6 +20,7 @@ GENERAL STYLES
 
 .title_buttons {
 	text-align: right;
+	padding-top: 0;
 }
 
 body {
@@ -42,8 +43,9 @@ body {
 .navigation_image {
 		position: relative;
     text-decoration: none;
-    height: 415px;
+    height: 384px;
     background-size: cover;
+		margin-top: 2em;
 
 		&-overlay {
 			position: absolute;
@@ -64,10 +66,10 @@ body {
 				}
 			}
 		}
-}
 
-.navigation_image:last-child {
-	margin-right: 0;
+		&:last-child {
+			margin-right: 0;
+		}
 }
 
 .navigation_text, .portfolio_text {
@@ -144,6 +146,7 @@ a.return {
 
 .sidebar-image {
 	margin-top: 2em;
+	padding-top: 0;
 }
 
 .title_buttons {
@@ -155,6 +158,10 @@ a.return {
 
 .page-title {
 	padding: 0;
+
+	&.logo-bug {
+		margin-top: -1em;
+	}
 
 	img {
 		width: 80px;
@@ -188,6 +195,7 @@ a.return {
 
 .teaser_images {
 	padding-top: 2em;
+	float: left;
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -492,6 +500,10 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 			padding: 1.5em 1.5em 0;
+
+			&.testimonial {
+				padding: 1.5em 0;
+			}
 
 			p {
 				margin: 0 0 1.5em;

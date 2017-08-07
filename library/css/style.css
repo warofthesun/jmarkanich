@@ -648,7 +648,7 @@ them however you see fit.
     */
     padding: 1em;
     width: 100%;
-    padding-right: 0; }
+    padding: 0; }
 
   .m-1of2 {
     float: left;
@@ -1361,7 +1361,8 @@ GENERAL STYLES
   margin-top: 2em; }
 
 .title_buttons {
-  text-align: right; }
+  text-align: right;
+  padding-top: 0; }
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1379,8 +1380,9 @@ body {
 .navigation_image {
   position: relative;
   text-decoration: none;
-  height: 415px;
-  background-size: cover; }
+  height: 384px;
+  background-size: cover;
+  margin-top: 2em; }
   .navigation_image-overlay {
     position: absolute;
     width: 100%;
@@ -1393,9 +1395,8 @@ body {
       .navigation_image-overlay:hover .navigation_text {
         text-shadow: 0px 0px 0px #fff;
         color: #57403F; }
-
-.navigation_image:last-child {
-  margin-right: 0; }
+  .navigation_image:last-child {
+    margin-right: 0; }
 
 .navigation_text, .portfolio_text {
   position: relative;
@@ -1453,7 +1454,8 @@ a.return {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .sidebar-image {
-  margin-top: 2em; }
+  margin-top: 2em;
+  padding-top: 0; }
 
 .title_buttons .white-btn {
   width: 50%;
@@ -1461,6 +1463,8 @@ a.return {
 
 .page-title {
   padding: 0; }
+  .page-title.logo-bug {
+    margin-top: -1em; }
   .page-title img {
     width: 80px; }
 
@@ -1484,7 +1488,8 @@ a.return {
   border-bottom: 1px solid #ccc; }
 
 .teaser_images {
-  padding-top: 2em; }
+  padding-top: 2em;
+  float: left; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1697,6 +1702,8 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
+  .entry-content.testimonial {
+    padding: 1.5em 0; }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
@@ -2129,6 +2136,10 @@ you can add resource intensive styles.
   .wrap {
     width: 760px; }
 
+  .navigation_image {
+    margin-top: 0em;
+    height: 215px; }
+
   /*********************
   HEADER STYLES
   *********************/
@@ -2263,7 +2274,11 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; } }
+    width: 1040px; }
+
+  .navigation_image {
+    margin-top: 0em;
+    height: 315px; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2280,7 +2295,10 @@ This is for the larger monitors and possibly full screen viewers.
   
   ******************************************************************/
   .wrap {
-    width: 1340px; } }
+    width: 1340px; }
+
+  .navigation_image {
+    height: 415px; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

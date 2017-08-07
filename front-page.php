@@ -11,7 +11,7 @@
 						$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
 						$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 					?>
-						<a href="<?php echo the_field('first_navigation_link') ?>" class="d-1of3 m-all">
+						<a href="<?php echo the_field('first_navigation_link') ?>" class="m-all t-1of3 d-1of3">
 							<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
 								<div class="navigation_image-overlay">
 									<div class="navigation_text">
@@ -26,7 +26,7 @@
 							$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
 							$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 						?>
-							<a href="<?php echo the_field('second_navigation_link') ?>" class="d-1of3 m-all">
+							<a href="<?php echo the_field('second_navigation_link') ?>" class="m-all t-1of3 d-1of3">
 								<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
 									<div class="navigation_image-overlay">
 									<div class="navigation_text">
@@ -41,7 +41,7 @@
 								$imageAlt = esc_attr($imageArray['alt']); // Grab, from the array, the 'alt'
 								$imageThumbURL = esc_url($imageArray['sizes']['front-page-navigation']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 							?>
-								<a href="<?php echo the_field('third_navigation_link') ?>" class="d-1of3 m-all">
+								<a href="<?php echo the_field('third_navigation_link') ?>" class="m-all t-1of3 d-1of3">
 									<div class="navigation_image" style="background-image:url('<?php echo $imageThumbURL;?>')">
 										<div class="navigation_image-overlay">
 											<div class="navigation_text">
