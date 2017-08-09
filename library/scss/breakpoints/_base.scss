@@ -179,6 +179,24 @@ a.return {
 	}
 }
 
+.testimonial {
+	.title_buttons {
+		.white-btn:not(:first-child) {
+			background-color: darken($green, 4%);
+			color: #fff;
+		}
+	}
+}
+
+.services {
+	.title_buttons {
+		.white-btn:first-child {
+			background-color: darken($green, 4%);
+			color: #fff;
+		}
+	}
+}
+
 .title_buttons {
   .white-btn:not(:first-child) {
     border-left: 0px;
@@ -189,6 +207,7 @@ a.return {
 	font-family: $serif;
 	color: $brown;
 	font-size: 1.7em;
+	margin-top: 1em;
 }
 
 .project_name {
@@ -197,6 +216,9 @@ a.return {
 	font-style: italic;
 	font-size: 1.5em;
 	text-decoration: none;
+	display: block;
+	margin-bottom: 1em;
+
 }
 
 .testimonial_type {

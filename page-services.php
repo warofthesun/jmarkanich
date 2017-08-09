@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <!--SERVICES-->
-			<div id="content">
+			<div id="content" class="services">
 
 				<div id="inner-content" class="wrap cf">
 					<h1 class="page-title m-all t-2of3 d-2of3"><?php the_title(); ?></h1>

@@ -248,6 +248,9 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 760px; }
 
+.customer_name {
+  margin-top: 0; }
+
 .navigation_image {
   margin-top: 0em;
   height: 215px; }

@@ -1477,20 +1477,31 @@ a.return {
   .page-title img {
     width: 80px; }
 
+.testimonial .title_buttons .white-btn:not(:first-child) {
+  background-color: #4e4b46;
+  color: #fff; }
+
+.services .title_buttons .white-btn:first-child {
+  background-color: #4e4b46;
+  color: #fff; }
+
 .title_buttons .white-btn:not(:first-child) {
   border-left: 0px; }
 
 .customer_name {
   font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
   color: #57403F;
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  margin-top: 1em; }
 
 .project_name {
   font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
   color: #57403F;
   font-style: italic;
   font-size: 1.5em;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1em; }
 
 .testimonial_type {
   padding-bottom: 3em;
@@ -2156,6 +2167,9 @@ you can add resource intensive styles.
   *********************/
   .wrap {
     width: 760px; }
+
+  .customer_name {
+    margin-top: 0; }
 
   .navigation_image {
     margin-top: 0em;
