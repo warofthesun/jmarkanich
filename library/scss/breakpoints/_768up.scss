@@ -62,6 +62,14 @@ HEADER STYLES
 		}
 	}
 
+.page-title {
+	padding: 0;
+
+	&.logo-bug {
+		text-align: left;
+	}
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/

@@ -1457,8 +1457,13 @@ a.return {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .sidebar-image {
-  margin-top: 2em;
-  padding-top: 0; }
+  padding-top: 0;
+  text-align: center; }
+  .sidebar-image img {
+    width: 100%;
+    max-width: 416px;
+    height: auto;
+    margin: 2em auto; }
 
 .title_buttons .white-btn {
   width: 50%;
@@ -1467,7 +1472,8 @@ a.return {
 .page-title {
   padding: 0; }
   .page-title.logo-bug {
-    margin-top: -1em; }
+    margin-top: -1em;
+    text-align: center; }
   .page-title img {
     width: 80px; }
 
@@ -1493,6 +1499,10 @@ a.return {
 .teaser_images {
   padding-top: 2em;
   float: left; }
+
+.image-row img {
+  width: 100%;
+  height: auto; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -2165,6 +2175,11 @@ you can add resource intensive styles.
   *********************/
   #logo img {
     width: 600px; }
+
+  .page-title {
+    padding: 0; }
+    .page-title.logo-bug {
+      text-align: left; }
 
   /*********************
   NAVIGATION STYLES

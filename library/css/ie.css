@@ -267,6 +267,11 @@ HEADER STYLES
 #logo img {
   width: 600px; }
 
+.page-title {
+  padding: 0; }
+  .page-title.logo-bug {
+    text-align: left; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

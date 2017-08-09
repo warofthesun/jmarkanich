@@ -148,8 +148,15 @@ a.return {
 }
 
 .sidebar-image {
-	margin-top: 2em;
 	padding-top: 0;
+	text-align: center;
+
+	img {
+		width: 100%;
+		max-width: 416px;
+		height: auto;
+		margin: 2em auto;
+	}
 }
 
 .title_buttons {
@@ -164,6 +171,7 @@ a.return {
 
 	&.logo-bug {
 		margin-top: -1em;
+		text-align: center;
 	}
 
 	img {
@@ -199,6 +207,13 @@ a.return {
 .teaser_images {
 	padding-top: 2em;
 	float: left;
+}
+
+.image-row {
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 /********************
 WORDPRESS BODY CLASSES
