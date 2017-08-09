@@ -1422,8 +1422,10 @@ body {
 
 .portfolio_image {
   height: 416px;
+  width: 315px;
   position: relative;
-  background-size: cover; }
+  background-size: cover;
+  margin: .5em auto 0; }
   .portfolio_image-overlay {
     position: absolute;
     width: 100%;
@@ -2149,6 +2151,10 @@ you can add resource intensive styles.
     margin-top: 0em;
     height: 215px; }
 
+  .portfolio_image {
+    height: 316px;
+    width: auto; }
+
   .footer .footer_contact .phone {
     display: inline-block; }
   .footer .footer_contact .phone::before {
@@ -2296,7 +2302,10 @@ you can add resource intensive styles.
 
   .navigation_image {
     margin-top: 0em;
-    height: 315px; } }
+    height: 315px; }
+
+  .portfolio_image {
+    height: 416px; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

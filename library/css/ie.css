@@ -252,6 +252,10 @@ LAYOUT & GRID STYLES
   margin-top: 0em;
   height: 215px; }
 
+.portfolio_image {
+  height: 316px;
+  width: auto; }
+
 .footer .footer_contact .phone {
   display: inline-block; }
 .footer .footer_contact .phone::before {
@@ -393,6 +397,9 @@ be seen on the Desktop.
 .navigation_image {
   margin-top: 0em;
   height: 315px; }
+
+.portfolio_image {
+  height: 416px; }
 
 /*
 you can call the larger styles if you want, but there's really no need

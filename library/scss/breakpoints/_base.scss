@@ -99,8 +99,10 @@ body {
 
 .portfolio_image {
 	height: 416px;
+	width: 315px;
 	position: relative;
 	background-size:cover;
+	margin: .5em auto 0;
 
 	&-overlay {
 		position: absolute;

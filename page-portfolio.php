@@ -18,7 +18,7 @@
 								while ( $loop->have_posts() ) : $loop->the_post();
 									echo '<a href="';
 									the_permalink();
-									echo '" class="d-1of3 portfolio_page">';
+									echo '" class="m-all t-1of3 d-1of3 portfolio_page">';
 									echo '<div class="portfolio_image" style="background-image:url(';
 									the_post_thumbnail_url('portfolio_page_image');
 									echo ")";
