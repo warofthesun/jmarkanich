@@ -8,7 +8,7 @@
 			<div id="content" class="services">
 
 				<div id="inner-content" class="wrap cf">
-					<h1 class="page-title m-all t-2of3 d-2of3"><?php the_title(); ?></h1>
+					<h1 class="page-title m-all t-2of3 d-2of3"><i class="ti-logo-bug"></i><?php the_title(); ?></h1>
 					<div class="title_buttons m-all t-1of3 d-1of3">
 						<?php $my_query = new WP_Query('pagename=title buttons');
 							while ($my_query->have_posts()) : $my_query->the_post();

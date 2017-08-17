@@ -237,6 +237,28 @@ a.return {
 		height: auto;
 	}
 }
+
+blockquote {
+	margin: 0 0 1.5em 0.75em;
+	padding: 0 0 0 0.75em;
+	border-left: 0px solid $blue;
+	font-style: italic;
+	color: $green;
+	font-family: $serif !important;
+	font-size: 1.5em;
+	hyphens: none;
+
+	&:before {
+		content: "\f10d";
+		font-family: "FontAwesome";
+		font-size: 3em;
+    position: absolute;
+    left: 60px;
+    margin-top: -40px;
+    opacity: 0.1;
+	}
+
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -341,9 +363,13 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+	font-size: 1.55em;
+	line-height: 1.5em;
 	margin-bottom: 0.375em;
+	font-family: $serif;
+	color: $green;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 h3, .h3 {
@@ -614,16 +640,7 @@ POSTS & CONTENT STYLES
 				}
 			}
 
-			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
-				font-style: italic;
-				color: $meta-gray;
 
-				&:before {}
-
-			}
 
 			dl {}
 
