@@ -540,9 +540,9 @@ p {
   -ms-word-wrap: break-word;
   word-break: break-word;
   word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  hyphens: manual;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
   hyphenate-lines: 3;
@@ -1546,13 +1546,16 @@ a.return {
   width: 50%;
   float: left; }
 
+#menu-main-menu ul li:before, #menu-main-menu ol li:before {
+  content: "" !important; }
+
 .page-title:before {
   content: "\61";
   margin-left: -.9em;
   font-size: .7em;
   margin-right: .4em; }
 
-.page-title.logo-bug::before {
+.page-title.logo-bug:before {
   content: ""; }
 
 .page-title {
@@ -1828,6 +1831,11 @@ POSTS & CONTENT STYLES
   font-style: italic;
   margin: 0; }
 
+ul, ol {
+  margin: 1em; }
+  ul li, ol li {
+    margin: 1em; }
+
 /* entry content */
 .entry-content {
   padding: 1.5em 1.5em 0;
@@ -1841,6 +1849,10 @@ POSTS & CONTENT STYLES
     padding: 1.5em 0; }
   .entry-content p {
     margin: 0 0 1.5em; }
+  .entry-content ul, .entry-content ol {
+    margin: 1em; }
+    .entry-content ul li, .entry-content ol li {
+      margin: 1em; }
   .entry-content table {
     width: 100%;
     border: 1px solid #eaedf2;
@@ -1891,6 +1903,16 @@ POSTS & CONTENT STYLES
     border-radius: 3px; }
 
 /* end .entry-content */
+#main ul, #main ol {
+  margin: 1em; }
+  #main ul li, #main ol li {
+    margin: 1.2em; }
+    #main ul li:before, #main ol li:before {
+      content: "\61";
+      font-family: "timeless-interiors";
+      margin-left: -1.6em;
+      margin-right: .6em; }
+
 .wp-caption {
   max-width: 100%;
   background: #eee;

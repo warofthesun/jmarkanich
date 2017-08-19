@@ -51,7 +51,7 @@
 											the_content();
 										?>
 										</div>
-										<div style="width:100%;text-align:center">
+										<div style="width:100%;text-align:center;float:left;">
 										<a href="<?php site_url(); ?>/portfolio_item/<?php the_field('portfolio_link') ?>" class="white-btn" style="text-align:center;">view project</a>
 									</div>
 									</section>

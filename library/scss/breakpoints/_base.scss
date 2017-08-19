@@ -225,6 +225,12 @@ a.return {
   }
 }
 
+#menu-main-menu {
+	ul li:before, ol li:before {
+		content: "" !important;
+	}
+}
+
 .page-title:before {
   content: "\61";
 	margin-left: -.9em;
@@ -232,7 +238,7 @@ a.return {
   margin-right: .4em;
 }
 
-.page-title.logo-bug::before {
+.page-title.logo-bug:before {
 	content: "";
 }
 
@@ -636,6 +642,14 @@ POSTS & CONTENT STYLES
 			time {}
 		}
 
+		ul, ol {
+				margin:1em;
+			li {
+				margin:1em;
+			}
+
+		}
+
 		/* entry content */
 		.entry-content {
 			padding: 1.5em 1.5em 0;
@@ -652,14 +666,19 @@ POSTS & CONTENT STYLES
 			ul, ol, table, dl {}
 
 			ul, ol {
-
-				li {}
+					margin:1em;
+				li {
+					margin:1em;
+				}
 
 			}
 
 			ul {
 
-				li {}
+
+				li {
+
+				}
 
 			}
 
@@ -759,6 +778,21 @@ POSTS & CONTENT STYLES
 
 		} /* end .entry-content */
 
+		#main {
+			ul, ol {
+					margin:1em;
+				li {
+					margin:1.2em;
+
+					&:before {
+						content: "\61";
+						font-family: "timeless-interiors";
+						margin-left: -1.6em;
+						margin-right: .6em;
+					}
+				}
+		}
+	}
 		.wp-caption {
 			max-width: 100%;
 			background: #eee;
