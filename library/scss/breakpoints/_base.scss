@@ -131,7 +131,65 @@ body {
 .gallery-item {
 	float: left;
 	margin-right: 1.4em;
+	width: 32%;
+
+	&:nth-child(4n+3) {
+		margin-right: 0;
+	}
 }
+
+.fbx-stage {
+	overflow: visible;
+}
+
+.fbx-caption {
+	bottom: -60px;
+	background-color: rgba(0,0,0,0) !important;
+	font-family: $serif;
+	font-size: 2em;
+	color: #ffffff;
+}
+
+.fbx-close-caption {
+	display: none;
+}
+
+.fbx-rounded {
+
+	.fbx-item-image, .fbx-item-current {
+		border-radius: 0px;
+	}
+
+	.fbx-prev, .fbx-next {
+		top: 55%;
+    margin-top: -50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 0px solid transparent;
+    border-radius: 15px !important;
+	}
+	.fbx-inner {
+		border: 2px solid transparent;
+    border-radius: 0px;
+	}
+
+	.fbx-close {
+		top: -21px;
+	    right: -46px;
+	    width: 28px;
+	    height: 28px;
+	    line-height: 28px;
+	    border: 0px solid transparent;
+	    border-radius: 50%;
+	    background-color: transparent !important;
+	    box-shadow: 0 0 0;
+	    font-size: 2em !important;
+	    color: #fff !important;
+
+	}
+}
+
 
 .gallery-caption {
 	display: none;
@@ -141,6 +199,7 @@ a.return {
 	font-size: 24px;
 	text-decoration: none;
 	color: $green-lt;
+	width: 100%;
 
 	span {
 		font-family: $sans-serif;
@@ -710,6 +769,12 @@ POSTS & CONTENT STYLES
 		} /* end .wp-caption */
 
 		/* image gallery styles */
+
+		.gallery-columns-3 {
+			br {
+				display: none;
+			}
+		}
 		.gallery {
 
 			dl {
