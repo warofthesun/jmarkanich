@@ -225,6 +225,17 @@ a.return {
   }
 }
 
+.page-title:before {
+  content: "\61";
+	margin-left: -.9em;
+  font-size: .7em;
+  margin-right: .4em;
+}
+
+.page-title.logo-bug::before {
+	content: "";
+}
+
 .page-title {
 	padding: 0;
 

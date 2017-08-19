@@ -508,7 +508,8 @@ FONT FACE (IN YOUR FACE)
   -moz-osx-font-smoothing: grayscale; }
 
 [class^="ti-"]:before,
-[class*=" ti-"]:before {
+[class*=" ti-"]:before,
+.page-title:before {
   font-family: "timeless-interiors" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -1544,6 +1545,15 @@ a.return {
 .title_buttons .white-btn {
   width: 50%;
   float: left; }
+
+.page-title:before {
+  content: "\61";
+  margin-left: -.9em;
+  font-size: .7em;
+  margin-right: .4em; }
+
+.page-title.logo-bug::before {
+  content: ""; }
 
 .page-title {
   padding: 0; }

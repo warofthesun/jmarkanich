@@ -88,7 +88,8 @@ FONT FACE (IN YOUR FACE)
   -moz-osx-font-smoothing: grayscale; }
 
 [class^="ti-"]:before,
-[class*=" ti-"]:before {
+[class*=" ti-"]:before,
+.page-title:before {
   font-family: "timeless-interiors" !important;
   font-style: normal !important;
   font-weight: normal !important;

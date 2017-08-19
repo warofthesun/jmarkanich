@@ -572,7 +572,8 @@ body#tinymce.wp-editor {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   body#tinymce.wp-editor [class^="ti-"]:before,
-  body#tinymce.wp-editor [class*=" ti-"]:before {
+  body#tinymce.wp-editor [class*=" ti-"]:before,
+  body#tinymce.wp-editor .page-title:before {
     font-family: "timeless-interiors" !important;
     font-style: normal !important;
     font-weight: normal !important;
