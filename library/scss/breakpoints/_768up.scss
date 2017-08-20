@@ -78,9 +78,17 @@ HEADER STYLES
 
 .page-title {
 	padding: 0;
+	text-align: left;
 
 	&.logo-bug {
 		text-align: left;
+	}
+
+	&:before {
+	  content: "\61";
+		margin-left: -.9em;
+	  margin-right: .4em;
+		display: inline-block;
 	}
 }
 

@@ -1546,15 +1546,15 @@ a.return {
 
 .page-title:before {
   content: "\61";
-  margin-left: -.9em;
-  font-size: .7em;
-  margin-right: .4em; }
+  display: block;
+  font-size: .7em; }
 
 .page-title.logo-bug:before {
   content: ""; }
 
 .page-title {
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   .page-title.logo-bug {
     margin-top: -1em;
     text-align: center; }
@@ -1607,15 +1607,25 @@ blockquote {
   color: #595550;
   font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif !important;
   font-size: 1.5em;
-  hyphens: none; }
+  hyphens: none;
+  position: relative; }
   blockquote:before {
     content: "\f10d";
     font-family: "FontAwesome";
     font-size: 3em;
     position: absolute;
-    left: 60px;
+    left: -20px;
     margin-top: -40px;
     opacity: 0.1; }
+  blockquote:after {
+    content: "\f10e";
+    font-family: "FontAwesome";
+    font-size: 3em;
+    position: absolute;
+    right: 20px;
+    margin-top: -90px;
+    opacity: 0.1;
+    float: right; }
 
 .entry-content .pdfemb-viewer {
   border: 0px !important; }
@@ -1778,6 +1788,7 @@ ul#menu-main-menu {
   .nav li {
     width: 33%;
     text-align: center;
+    margin: 0;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -2350,9 +2361,15 @@ you can add resource intensive styles.
     width: 600px; }
 
   .page-title {
-    padding: 0; }
+    padding: 0;
+    text-align: left; }
     .page-title.logo-bug {
       text-align: left; }
+    .page-title:before {
+      content: "\61";
+      margin-left: -.9em;
+      margin-right: .4em;
+      display: inline-block; }
 
   /*********************
   NAVIGATION STYLES

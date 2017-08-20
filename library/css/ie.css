@@ -310,9 +310,15 @@ HEADER STYLES
   width: 600px; }
 
 .page-title {
-  padding: 0; }
+  padding: 0;
+  text-align: left; }
   .page-title.logo-bug {
     text-align: left; }
+  .page-title:before {
+    content: "\61";
+    margin-left: -.9em;
+    margin-right: .4em;
+    display: inline-block; }
 
 /*********************
 NAVIGATION STYLES

@@ -228,9 +228,9 @@ a.return {
 
 .page-title:before {
   content: "\61";
-	margin-left: -.9em;
+	display: block;
   font-size: .7em;
-  margin-right: .4em;
+
 }
 
 .page-title.logo-bug:before {
@@ -239,6 +239,7 @@ a.return {
 
 .page-title {
 	padding: 0;
+	text-align: center;
 
 	&.logo-bug {
 		margin-top: -1em;
@@ -318,15 +319,26 @@ blockquote {
 	font-family: $serif !important;
 	font-size: 1.5em;
 	hyphens: none;
+	position: relative;
 
 	&:before {
 		content: "\f10d";
 		font-family: "FontAwesome";
 		font-size: 3em;
     position: absolute;
-    left: 60px;
+    left: -20px;
     margin-top: -40px;
     opacity: 0.1;
+	}
+		&:after {
+			content: "\f10e";
+	    font-family: "FontAwesome";
+	    font-size: 3em;
+	    position: absolute;
+	    right: 20px;
+	    margin-top: -90px;
+	    opacity: 0.1;
+	    float: right;
 	}
 
 }
@@ -527,7 +539,8 @@ ul#menu-main-menu {
 
 	li {
 		width: 33%;
-		text-align: center;
+		text-align: center;margin: 0;
+
 
 		a {
 			display: block;
