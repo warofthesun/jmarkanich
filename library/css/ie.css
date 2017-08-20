@@ -293,6 +293,11 @@ LAYOUT & GRID STYLES
   height: 316px;
   width: auto; }
 
+.press_page img {
+  transition: all .5s; }
+.press_page img:hover {
+  opacity: .5; }
+
 .footer .footer_contact .phone {
   display: inline-block; }
 .footer .footer_contact .phone::before {

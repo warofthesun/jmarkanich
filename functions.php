@@ -78,6 +78,7 @@ add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'front-page-navigation', 450, 450, true );
 add_image_size( 'portfolio_page_image', 416, 550, true );
 add_image_size( 'portfolio_gallery_thumbnail', 416, 320, true );
+add_image_size( 'press_page_thumbnail', 416, false );
 
 /*
 to add more sizes, simply copy a line from above
@@ -116,6 +117,51 @@ when you add media to your content blocks. If you add more image sizes,
 duplicate one of the lines in the array and name it according to your
 new image size.
 */
+
+/************* LIMIT POST FORMATS ******************/
+function ti_get_allowed_project_formats() {
+
+    return array( 'standard', 'video' );
+}
+
+add_action( 'load-post.php',     'ti_post_format_support_filter' );
+add_action( 'load-post-new.php', 'ti_post_format_support_filter' );
+add_action( 'load-edit.php',     'ti_post_format_support_filter' );
+
+function ti_post_format_support_filter() {
+
+    $screen = get_current_screen();
+
+    // Bail if not on the projects screen.
+    if ( empty( $screen->post_type ) ||  $screen->post_type !== 'press_type' )
+        return;
+
+    // Check if the current theme supports formats.
+    if ( current_theme_supports( 'post-formats' ) ) {
+
+        $formats = get_theme_support( 'post-formats' );
+
+        // If we have formats, add theme support for only the allowed formats.
+        if ( isset( $formats[0] ) ) {
+            $new_formats = array_intersect( $formats[0], ti_get_allowed_project_formats() );
+
+            // Remove post formats support.
+            remove_theme_support( 'post-formats' );
+
+            // If the theme supports the allowed formats, add support for them.
+            if ( $new_formats )
+                add_theme_support( 'post-formats', $new_formats );
+        }
+    }
+
+    // Filter the default post format.
+    add_filter( 'option_default_post_format', 'ti_default_post_format_filter', 95 );
+}
+
+function ti_default_post_format_filter( $format ) {
+
+    return in_array( $format, ti_get_allowed_project_formats() ) ? $format : 'standard';
+}
 
 /************* THEME CUSTOMIZE *********************/
 

@@ -41,6 +41,16 @@ LAYOUT & GRID STYLES
 	width: auto;
 }
 
+.press_page {
+	img {
+		transition: all .5s;
+	}
+
+	img:hover {
+		opacity: .5;
+	}
+}
+
 .footer {
 	.footer_contact {
 		.phone {

@@ -1377,15 +1377,10 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Timeless Interiors
+Author: The SplitPixel
 
 Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
 
 ******************************************************************/
 /*********************
@@ -1621,6 +1616,19 @@ blockquote {
     left: 60px;
     margin-top: -40px;
     opacity: 0.1; }
+
+.entry-content .pdfemb-viewer {
+  border: 0px !important; }
+
+.press_page {
+  text-decoration: none; }
+  .press_page .press_title {
+    text-decoration: none !important;
+    text-align: center;
+    font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+    color: #595550;
+    font-size: 1.5em;
+    text-transform: capitalize; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -2324,6 +2332,11 @@ you can add resource intensive styles.
   .portfolio_image {
     height: 316px;
     width: auto; }
+
+  .press_page img {
+    transition: all .5s; }
+  .press_page img:hover {
+    opacity: .5; }
 
   .footer .footer_contact .phone {
     display: inline-block; }

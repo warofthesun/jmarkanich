@@ -1,13 +1,8 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Timeless Interiors
+Author: The SplitPixel
 
 Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
 
 ******************************************************************/
 
@@ -334,6 +329,23 @@ blockquote {
     opacity: 0.1;
 	}
 
+}
+.entry-content {
+	.pdfemb-viewer {
+		border: 0px !important;
+	}
+}
+
+.press_page {
+	text-decoration: none;
+	.press_title {
+		text-decoration: none !important;
+		text-align: center;
+		font-family: $serif;
+		color: $green;
+		font-size: 1.5em;
+		text-transform: capitalize;
+	}
 }
 /********************
 WORDPRESS BODY CLASSES
