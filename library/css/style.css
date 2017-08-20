@@ -1912,11 +1912,11 @@ ul, ol {
       font-family: "timeless-interiors";
       margin-left: -1.6em;
       margin-right: .6em; }
-#main .contact-page.d-all {
+#main .contact-page-form.d-all {
   padding-left: 0; }
-#main .contact-page .d-1of2, #main .contact-page .t-all, #main .contact-page .d-all {
+#main .contact-page-form .d-1of2, #main .contact-page-form .t-all, #main .contact-page-form .d-all {
   padding-left: 0; }
-#main .contact-page textarea {
+#main .contact-page-form textarea {
   min-height: 220px;
   padding: 1em; }
 #main .wpcf7-form-control-wrap input[type="text"], #main .wpcf7-form-control-wrap input[type="email"] {
@@ -2503,7 +2503,10 @@ This is for the larger monitors and possibly full screen viewers.
     height: 415px; }
 
   .portfolio_image {
-    height: 550px; } }
+    height: 550px; }
+
+  .contact-page .full-width {
+    max-width: 1080px; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
