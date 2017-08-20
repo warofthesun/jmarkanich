@@ -791,8 +791,34 @@ POSTS & CONTENT STYLES
 						margin-right: .6em;
 					}
 				}
+			}
+
+			.contact-page {
+				&.d-all {
+					padding-left: 0;
+				}
+
+				.d-1of2, .t-all, .d-all  {
+					padding-left: 0;
+				}
+
+				textarea {
+					min-height: 220px;
+					padding: 1em;
+				}
+			}
+			.wpcf7-form-control-wrap {
+				input[type="text"], input[type="email"] {
+					max-width: 100%;
+					margin-bottom: 0;
+				}
+			}
+
+			div.wpcf7-response-output {
+				display: inline-block;
+				margin: 0;
+			}
 		}
-	}
 		.wp-caption {
 			max-width: 100%;
 			background: #eee;
@@ -923,6 +949,12 @@ PAGE NAVI STYLES
 
 	} /* end .wp-prev-next */
 
+hr {
+	border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, $tan, #ccc);
+}
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/

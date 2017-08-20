@@ -1039,7 +1039,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.white-btn, .blue-btn, .comment-reply-link, #submit {
+.white-btn, .wpcf7-form-control.wpcf7-submit, .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1055,11 +1055,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-transform: capitalize;
   transition: all .5s;
   -webkit-transition: all .5s; }
-  .white-btn:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .white-btn:focus, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .white-btn:hover, .wpcf7-form-control.wpcf7-submit:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .white-btn:focus, .wpcf7-form-control.wpcf7-submit:focus, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
     color: #fff !important;
     text-decoration: none;
     outline: none; }
-  .white-btn:active, .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .white-btn:active, .wpcf7-form-control.wpcf7-submit:active, .blue-btn:active, .comment-reply-link:active, #submit:active {
     top: 1px; }
 
 /*
@@ -1067,11 +1067,11 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.white-btn {
+.white-btn, .wpcf7-form-control.wpcf7-submit {
   background-color: #fff; }
-  .white-btn:hover, .white-btn:focus {
+  .white-btn:hover, .white-btn:focus, .wpcf7-form-control.wpcf7-submit:hover, .wpcf7-form-control.wpcf7-submit:focus {
     background-color: #4e4b46; }
-  .white-btn:active {
+  .white-btn:active, .wpcf7-form-control.wpcf7-submit:active {
     background-color: #4c4844; }
 
 .blue-btn, .comment-reply-link, #submit {
@@ -1125,14 +1125,14 @@ textarea,
   margin-bottom: 14px;
   font-size: 1em;
   color: #4A4A4A;
-  border-radius: 3px;
+  border-radius: 0px;
   vertical-align: middle;
   box-shadow: none;
-  border: 0;
+  border: 1px solid #D8CFC0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgba(216, 207, 192, 0.15);
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
   input[type="text"]:focus, input[type="text"]:active,
@@ -1168,7 +1168,7 @@ textarea,
   textarea:active,
   .field:focus,
   .field:active {
-    background-color: #f7f8fa;
+    background-color: white;
     outline: none; }
   input[type="text"].error, input[type="text"].is-invalid,
   input[type="password"].error,
@@ -1912,6 +1912,19 @@ ul, ol {
       font-family: "timeless-interiors";
       margin-left: -1.6em;
       margin-right: .6em; }
+#main .contact-page.d-all {
+  padding-left: 0; }
+#main .contact-page .d-1of2, #main .contact-page .t-all, #main .contact-page .d-all {
+  padding-left: 0; }
+#main .contact-page textarea {
+  min-height: 220px;
+  padding: 1em; }
+#main .wpcf7-form-control-wrap input[type="text"], #main .wpcf7-form-control-wrap input[type="email"] {
+  max-width: 100%;
+  margin-bottom: 0; }
+#main div.wpcf7-response-output {
+  display: inline-block;
+  margin: 0; }
 
 .wp-caption {
   max-width: 100%;
@@ -1989,6 +2002,12 @@ PAGE NAVI STYLES
   float: right; }
 
 /* end .wp-prev-next */
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #D8CFC0, #ccc); }
+
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
