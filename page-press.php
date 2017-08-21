@@ -11,7 +11,7 @@
 
 						<main id="main" class="m-all t-3of3 d-7of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php
-								$args = array( 'post_type' => 'press_type', 'posts_per_page' => 0 );
+								$args = array( 'post_type' => 'press_type' );
 								$loop = new WP_Query( $args );
 								while ( $loop->have_posts() ) : $loop->the_post();
 									echo '<a href="';

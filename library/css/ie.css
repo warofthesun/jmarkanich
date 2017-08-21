@@ -298,6 +298,9 @@ LAYOUT & GRID STYLES
 .press_page img:hover {
   opacity: .5; }
 
+a.press_page:nth-child(3n+4) {
+  clear: left; }
+
 .footer .footer_contact .phone {
   display: inline-block; }
 .footer .footer_contact .phone::before {

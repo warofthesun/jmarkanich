@@ -51,6 +51,12 @@ LAYOUT & GRID STYLES
 	}
 }
 
+a.press_page:nth-child(3n+4) {
+	clear: left;
+}
+
+
+
 .footer {
 	.footer_contact {
 		.phone {
