@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<!--PAGE-->
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">

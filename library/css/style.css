@@ -1370,6 +1370,36 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
+input[type="search"] {
+  height: 1.9em;
+  margin-bottom: 0px;
+  background-color: #fff;
+  border: 1px solid #D8CFC0;
+  border-radius: 0px;
+  margin-left: 0px;
+  width: 85%;
+  padding-left: 30px;
+  transition: .6s; }
+  input[type="search"]:focus, input[type="search"]:active {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 1px 1px 3px #eaedf2; }
+
+.fa-search {
+  position: absolute;
+  color: #979797;
+  background-color: #D8CFC0;
+  width: 2em;
+  height: 2em;
+  border-radius: 0px;
+  border: 1px solid #D8CFC0;
+  padding-top: 0.32%; }
+
+.fa-search:before {
+  margin-left: 7px;
+  margin-top: 3px;
+  display: inline-block; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1544,6 +1574,9 @@ a.return {
 #menu-main-menu ul li:before, #menu-main-menu ol li:before {
   content: "" !important; }
 
+.post-page .page-title {
+  margin-bottom: 1em; }
+
 .page-title:before {
   content: "\61";
   display: block;
@@ -1560,6 +1593,10 @@ a.return {
     text-align: center; }
   .page-title img {
     width: 80px; }
+
+.top-post img {
+  width: 100%;
+  height: auto; }
 
 .testimonial .title_buttons .white-btn:not(:first-child) {
   background-color: #4e4b46;
@@ -1639,6 +1676,36 @@ blockquote {
     color: #595550;
     font-size: 1.5em;
     text-transform: capitalize; }
+
+.widget_categories ul {
+  margin: 0;
+  padding: 0; }
+  .widget_categories ul li {
+    margin: 0;
+    padding: 0; }
+
+.post-page .hentry header, .post-page .hentry footer {
+  padding-left: 0; }
+.post-page .entry-content {
+  padding-left: 0; }
+
+.post-list-thumbnail {
+  padding-left: 0; }
+
+header.post-list {
+  padding-top: 0 !important; }
+
+.post-page .hentry header, .post-format .article-header {
+  padding-bottom: 1em !important;
+  border-bottom: 1px solid #D8CFC0; }
+
+.cat-item, .footer-category {
+  color: #B7A993; }
+  .cat-item a, .footer-category a {
+    text-decoration: none;
+    color: #B7A993 !important;
+    font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+    font-style: italic; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1732,6 +1799,16 @@ h2, .h2 {
   color: #595550;
   font-weight: bold;
   text-transform: uppercase; }
+
+.widgettitle {
+  font-size: 1.55em;
+  line-height: 1.5em;
+  margin-bottom: 0.375em;
+  font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+  color: #979797;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 0px !important; }
 
 h3, .h3 {
   font-size: 1.125em; }
@@ -1835,6 +1912,12 @@ POSTS & CONTENT STYLES
 .entry-title {
   margin: 0; }
 
+.entry-title {
+  text-transform: capitalize;
+  color: #57403F;
+  font-weight: normal;
+  font-size: 2em; }
+
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
 /* general post style */
@@ -1846,8 +1929,8 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
-  font-style: italic;
+  color: #57403F;
+  font-style: normal;
   margin: 0; }
 
 ul, ol {
@@ -2442,7 +2525,8 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 0em;
+    padding-top: 0; }
 
   .widgettitle {
     border-bottom: 2px solid #444;

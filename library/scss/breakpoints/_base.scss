@@ -226,6 +226,12 @@ a.return {
 	}
 }
 
+.post-page {
+	.page-title {
+		margin-bottom: 1em;
+	}
+}
+
 .page-title:before {
   content: "\61";
 	display: block;
@@ -248,6 +254,13 @@ a.return {
 
 	img {
 		width: 80px;
+	}
+}
+
+.top-post {
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -357,6 +370,56 @@ blockquote {
 		color: $green;
 		font-size: 1.5em;
 		text-transform: capitalize;
+	}
+}
+
+.widget_categories {
+	ul {
+		margin:0;
+		padding: 0;
+
+		li {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+
+
+.post-page {
+	.hentry header, .hentry footer {
+		padding-left: 0;
+	}
+
+	.entry-content {
+		padding-left: 0;
+	}
+}
+
+.post-list-thumbnail {
+	padding-left: 0;
+}
+
+header {
+
+	&.post-list {
+		padding-top: 0 !important;
+	}
+}
+
+.post-page .hentry header, .post-format .article-header {
+	padding-bottom: 1em !important;
+	border-bottom: 1px solid $tan;
+}
+
+.cat-item, .footer-category {
+	color: $gold;
+	a {
+		text-decoration: none;
+		color: $gold !important;
+		font-family: $serif;
+		font-style: italic;;
 	}
 }
 /********************
@@ -470,6 +533,17 @@ h2, .h2 {
 	color: $green;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.widgettitle {
+	font-size: 1.55em;
+	line-height: 1.5em;
+	margin-bottom: 0.375em;
+	font-family: $serif;
+	color: $green-lt;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 0px !important;
 }
 
 h3, .h3 {
@@ -644,7 +718,12 @@ POSTS & CONTENT STYLES
 
 		.page-title {}
 
-		.entry-title {}
+		.entry-title {
+			text-transform: capitalize;
+			color: $brown;
+			font-weight: normal;
+			font-size: 2em;
+		}
 
 		.archive-title {}
 
@@ -660,8 +739,8 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $meta-gray;
-			font-style: italic;
+			color: $brown;
+			font-style: normal;
 			margin: 0;
 
 			time {}

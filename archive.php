@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!--ARCHIVE-->
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
