@@ -55,7 +55,16 @@ a.press_page:nth-child(3n+4) {
 	clear: left;
 }
 
+.gallery-item {
+	float: left;
+	margin-right: 1.4em;
+	width: 31%;
+	max-height: 348px;
 
+	&:nth-child(4n+3) {
+		margin-right: 0;
+	}
+}
 
 .footer {
 	.footer_contact {

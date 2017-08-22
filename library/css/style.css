@@ -1504,7 +1504,7 @@ body {
 .gallery-item {
   float: left;
   margin-right: 1.4em;
-  width: 32%;
+  width: 100%;
   max-height: 348px; }
   .gallery-item:nth-child(4n+3) {
     margin-right: 0; }
@@ -2338,6 +2338,14 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
+  .gallery-item {
+    float: left;
+    margin-right: 1.4em;
+    width: 30%;
+    max-height: 348px; }
+    .gallery-item:nth-child(4n+3) {
+      margin-right: 0; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2435,6 +2443,14 @@ you can add resource intensive styles.
 
   a.press_page:nth-child(3n+4) {
     clear: left; }
+
+  .gallery-item {
+    float: left;
+    margin-right: 1.4em;
+    width: 31%;
+    max-height: 348px; }
+    .gallery-item:nth-child(4n+3) {
+      margin-right: 0; }
 
   .footer .footer_contact .phone {
     display: inline-block; }
@@ -2624,7 +2640,15 @@ This is for the larger monitors and possibly full screen viewers.
     height: 550px; }
 
   .contact-page .full-width {
-    max-width: 1080px; } }
+    max-width: 1080px; }
+
+  .gallery-item {
+    float: left;
+    margin-right: 1.4em;
+    width: 32%;
+    max-height: 348px; }
+    .gallery-item:nth-child(4n+3) {
+      margin-right: 0; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

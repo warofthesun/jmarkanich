@@ -26,3 +26,14 @@ on larger screens.
     max-width: 1080px;
   }
 }
+
+.gallery-item {
+  float: left;
+  margin-right: 1.4em;
+  width: 32%;
+  max-height: 348px;
+
+  &:nth-child(4n+3) {
+    margin-right: 0;
+  }
+}

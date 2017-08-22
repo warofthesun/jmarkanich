@@ -210,6 +210,14 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+.gallery-item {
+  float: left;
+  margin-right: 1.4em;
+  width: 30%;
+  max-height: 348px; }
+  .gallery-item:nth-child(4n+3) {
+    margin-right: 0; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -300,6 +308,14 @@ LAYOUT & GRID STYLES
 
 a.press_page:nth-child(3n+4) {
   clear: left; }
+
+.gallery-item {
+  float: left;
+  margin-right: 1.4em;
+  width: 31%;
+  max-height: 348px; }
+  .gallery-item:nth-child(4n+3) {
+    margin-right: 0; }
 
 .footer .footer_contact .phone {
   display: inline-block; }
