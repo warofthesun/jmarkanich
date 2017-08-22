@@ -1504,7 +1504,8 @@ body {
 .gallery-item {
   float: left;
   margin-right: 1.4em;
-  width: 32%; }
+  width: 32%;
+  max-height: 348px; }
   .gallery-item:nth-child(4n+3) {
     margin-right: 0; }
 
