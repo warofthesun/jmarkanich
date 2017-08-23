@@ -1688,10 +1688,10 @@ blockquote {
     font-size: 1.5em;
     text-transform: capitalize; }
 
-.widget_categories ul {
+.widget_categories ul, .widget_archive ul {
   margin: 0;
   padding: 0; }
-  .widget_categories ul li {
+  .widget_categories ul li, .widget_archive ul li {
     margin: 0;
     padding: 0; }
 
@@ -1710,9 +1710,15 @@ header.post-list {
   padding-bottom: 1em !important;
   border-bottom: 1px solid #D8CFC0; }
 
-.cat-item, .footer-category {
+.widget_archive a {
+  text-decoration: none;
+  color: #B7A993 !important;
+  font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;
+  font-style: italic; }
+
+.cat-item, .footer-category, .widget_archive {
   color: #B7A993; }
-  .cat-item a, .footer-category a {
+  .cat-item a, .footer-category a, .widget_archive a {
     text-decoration: none;
     color: #B7A993 !important;
     font-family: "Libre Baskerville", Georgia, Cambria, Times New Roman, Times, serif;

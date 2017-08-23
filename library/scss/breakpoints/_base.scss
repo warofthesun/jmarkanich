@@ -392,7 +392,7 @@ blockquote {
 	}
 }
 
-.widget_categories {
+.widget_categories, .widget_archive {
 	ul {
 		margin:0;
 		padding: 0;
@@ -432,7 +432,16 @@ header {
 	border-bottom: 1px solid $tan;
 }
 
-.cat-item, .footer-category {
+.widget_archive {
+	a {
+		text-decoration: none;
+		color: $gold !important;
+		font-family: $serif;
+		font-style: italic;;
+	}
+}
+
+.cat-item, .footer-category, .widget_archive {
 	color: $gold;
 	a {
 		text-decoration: none;
