@@ -1575,6 +1575,16 @@ a.return {
 #menu-main-menu ul li:before, #menu-main-menu ol li:before {
   content: "" !important; }
 
+.pagination li {
+  border-right: 0px !important; }
+.pagination li:before {
+  content: "" !important; }
+.pagination a {
+  color: #595550 !important; }
+  .pagination a:hover {
+    color: #979797 !important;
+    background-color: #595550 !important; }
+
 .post-page .page-title {
   margin-bottom: 1em; }
 
