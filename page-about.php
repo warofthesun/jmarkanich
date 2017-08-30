@@ -9,7 +9,7 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
-						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('portfolio_page_image') ?></div>
+						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('sidebar_image') ?></div>
 						<main id="main" class="m-all t-2of3 d-2of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">

@@ -77,6 +77,7 @@ add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'front-page-navigation', 450, 450, true );
 add_image_size( 'portfolio_page_image', 416, 550, true );
+add_image_size( 'sidebar_image', 832, 1100, true );
 add_image_size( 'portfolio_gallery_thumbnail', 464, 356, true );
 add_image_size( 'blog_hero', 926, 712, true );
 add_image_size( 'press_page_thumbnail', 416, false );

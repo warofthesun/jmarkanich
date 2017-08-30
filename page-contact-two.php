@@ -14,11 +14,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
 
-									<h1 class="page-title m-all t-all d-all"><?php the_title(); ?></h1>
-
-								</header>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php
@@ -35,7 +31,7 @@
 							<?php endif; ?>
 
 						</main>
-						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('portfolio_page_image') ?></div>
+						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('sidebar_image') ?></div>
 						<?php
 							$imageArray = get_field('image_one'); // Array returned by Advanced Custom Fields
 							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'

@@ -53,7 +53,7 @@
 							<?php endif; ?>
 
 						</main>
-						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('portfolio_page_image') ?></div>
+						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('sidebar_image') ?></div>
 				</div>
 
 			</div>
