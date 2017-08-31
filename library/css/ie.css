@@ -132,6 +132,16 @@ p {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
+#main ul, #main ol {
+  margin: 1em; }
+  #main ul li, #main ol li {
+    margin: 1.2em; }
+    #main ul li:before, #main ol li:before {
+      content: "\61";
+      font-family: "timeless-interiors";
+      margin-left: -1.6em;
+      margin-right: .6em; }
+
 /******************************************************************
 Site Name:
 Author:

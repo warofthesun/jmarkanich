@@ -911,19 +911,7 @@ POSTS & CONTENT STYLES
 		} /* end .entry-content */
 
 		#main {
-			ul, ol {
-					margin:1em;
-				li {
-					margin:1.2em;
-
-					&:before {
-						content: "\61";
-						font-family: "timeless-interiors";
-						margin-left: -1.6em;
-						margin-right: .6em;
-					}
-				}
-			}
+			
 
 			.contact-page-form {
 				&.d-all {

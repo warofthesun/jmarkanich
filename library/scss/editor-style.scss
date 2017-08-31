@@ -28,6 +28,8 @@ body#tinymce.wp-editor {
 	// Sass functions
 	@import "partials/functions";
 
+	@import "modules/buttons";
+
 	// import mixins
 	@import "partials/mixins";
 	width: 870px;

@@ -297,6 +297,21 @@ body#tinymce.wp-editor {
   both compile to:
   width: 65%;
   *********************/
+  /*********************
+  BUTTON DEFAULTS
+  We're gonna use a placeholder selector here
+  so we can use common styles. We then use this
+  to load up the defaults in all our buttons.
+  
+  Here's a quick video to show how it works:
+  http://www.youtube.com/watch?v=hwdVpKiJzac
+  
+  *********************/
+  /*
+  An example button.
+  You can use this example if you want. Just replace all the variables
+  and it will create a button dependant on those variables.
+  */
   /******************************************************************
   Site Name:
   Author:
@@ -600,6 +615,49 @@ body#tinymce.wp-editor {
     -ms-font-feature-settings: "liga", "dlig";
     -o-font-feature-settings: "liga", "dlig";
     font-feature-settings: "liga", "dlig"; }
+  body#tinymce.wp-editor #main ul, body#tinymce.wp-editor #main ol {
+    margin: 1em; }
+    body#tinymce.wp-editor #main ul li, body#tinymce.wp-editor #main ol li {
+      margin: 1.2em; }
+      body#tinymce.wp-editor #main ul li:before, body#tinymce.wp-editor #main ol li:before {
+        content: "\61";
+        font-family: "timeless-interiors";
+        margin-left: -1.6em;
+        margin-right: .6em; }
+  body#tinymce.wp-editor .white-btn, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit, body#tinymce.wp-editor .blue-btn {
+    display: inline-block;
+    position: relative;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #979797;
+    font-size: 1em;
+    font-weight: normal;
+    padding: .5em 2em;
+    border: 1px solid #979797;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .5s;
+    -webkit-transition: all .5s; }
+    body#tinymce.wp-editor .white-btn:hover, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:hover, body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .white-btn:focus, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:focus, body#tinymce.wp-editor .blue-btn:focus {
+      color: #fff !important;
+      text-decoration: none;
+      outline: none; }
+    body#tinymce.wp-editor .white-btn:active, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:active, body#tinymce.wp-editor .blue-btn:active {
+      top: 1px; }
+  body#tinymce.wp-editor .white-btn, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit {
+    background-color: #fff; }
+    body#tinymce.wp-editor .white-btn:hover, body#tinymce.wp-editor .white-btn:focus, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:hover, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:focus {
+      background-color: #4e4b46; }
+    body#tinymce.wp-editor .white-btn:active, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:active {
+      background-color: #4c4844; }
+  body#tinymce.wp-editor .blue-btn {
+    background-color: #fff; }
+    body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .blue-btn:focus {
+      background-color: #4e4b46; }
+    body#tinymce.wp-editor .blue-btn:active {
+      background-color: #4c4844; }
   body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
     color: #595550;
     /* on hover */
