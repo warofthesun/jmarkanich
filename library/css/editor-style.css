@@ -646,6 +646,11 @@ body#tinymce.wp-editor {
       outline: none; }
     body#tinymce.wp-editor .white-btn:active, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:active, body#tinymce.wp-editor .blue-btn:active {
       top: 1px; }
+  body#tinymce.wp-editor .white-btn a {
+    color: #979797;
+    text-decoration: none; }
+  body#tinymce.wp-editor .white-btn:hover a {
+    color: #fff !important; }
   body#tinymce.wp-editor .white-btn, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit {
     background-color: #fff; }
     body#tinymce.wp-editor .white-btn:hover, body#tinymce.wp-editor .white-btn:focus, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:hover, body#tinymce.wp-editor .wpcf7-form-control.wpcf7-submit:focus {

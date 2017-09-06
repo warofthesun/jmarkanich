@@ -20,7 +20,7 @@
 
 										// display a sub field value
 									?>
-											<a href="http://<?php the_sub_field('social_link') ?>" class="fa fa-<?php the_sub_field('social_icon')?>" target="_blank"></a>
+											<a href="<?php the_sub_field('social_link') ?>" class="fa fa-<?php the_sub_field('social_icon')?>" target="_blank"></a>
 								<?php
 
 									endwhile;

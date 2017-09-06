@@ -78,6 +78,10 @@
 							<?php endif; ?>
 
 						</main>
+						<h2 style="text-align:center;display:block;">Read more testimonials</h2>
+						<div style="text-align:center;">
+							<a href="https://www.houzz.com/browseReviews/timelessinteriors" class="white-btn" style="text-align:center;">Read More</a>
+						</div>
 
 				</div>
 
