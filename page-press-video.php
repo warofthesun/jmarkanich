@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Press Page
+ Template Name: Press Video Page
 */
 ?>
 <?php get_header(); ?>
@@ -11,7 +11,7 @@
 
 						<main id="main" class="m-all t-3of3 d-7of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php
-								$cat = -127;
+								$cat = 127;
 								$args = array( 'post_type' => 'press_type', 'cat' => $cat );
 								$loop = new WP_Query( $args );
 								while ( $loop->have_posts() ) : $loop->the_post();
