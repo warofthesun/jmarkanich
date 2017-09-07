@@ -674,7 +674,7 @@ ul#menu-main-menu {
 		*/
 		ul.sub-menu,
 		ul.children {
-
+			display: none;
 			li {
 
 				a {
@@ -911,7 +911,7 @@ POSTS & CONTENT STYLES
 		} /* end .entry-content */
 
 		#main {
-			
+
 
 			.contact-page-form {
 				&.d-all {

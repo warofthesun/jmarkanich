@@ -1917,9 +1917,12 @@ ul#menu-main-menu {
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      display: none; }
+      .nav li ul.sub-menu li a,
+      .nav li ul.children li a {
+        padding-left: 30px; }
 
 /* end .nav */
 /*********************
@@ -2532,15 +2535,21 @@ you can add resource intensive styles.
           text-decoration: none; }
       .nav li ul.sub-menu,
       .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
+        margin: 0;
+        border: 0px solid #ccc;
         border-top: 0;
+        display: inline-block;
         position: absolute;
         visibility: hidden;
         z-index: 8999;
+        left: -100%;
+        background: rgba(255, 255, 255, 0.8);
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
+          margin: 0;
+          text-align: center;
+          padding: 1em;
           /*
           if you need to go deeper, go nuts
           just remember deeper menus suck
@@ -2548,7 +2557,7 @@ you can add resource intensive styles.
           */ }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
-            padding-left: 10px;
+            padding: 0px;
             border-right: 0;
             display: block;
             width: 180px;

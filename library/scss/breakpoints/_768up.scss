@@ -148,17 +148,22 @@ ul#menu-main-menu {
 		*/
 		ul.sub-menu,
 		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
+			margin: 0;
+			border: 0px solid #ccc;
 			border-top: 0;
+			display: inline-block;
 			position: absolute;
 			visibility: hidden;
 			z-index: 8999;
+			left: -100%;
+			background: rgba(255,255,255,0.8);
 
 			li {
-
+				margin:0;
+				text-align: center;
+				padding: 1em;
 				a {
-					padding-left: 10px;
+					padding: 0px;
 					border-right: 0;
 					display: block;
 					width: 180px;
