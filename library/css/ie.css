@@ -391,8 +391,8 @@ ul#menu-main-menu {
       position: absolute;
       visibility: hidden;
       z-index: 8999;
-      left: -100%;
-      background: rgba(255, 255, 255, 0.8);
+      left: -115%;
+      background: rgba(255, 255, 255, 0.9);
       /* highlight sub-menu current page */ }
       .nav li ul.sub-menu li,
       .nav li ul.children li {
@@ -410,7 +410,7 @@ ul#menu-main-menu {
           border-right: 0;
           display: block;
           width: 180px;
-          border-bottom: 1px solid #ccc; }
+          border-bottom: 0px solid #ccc; }
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }

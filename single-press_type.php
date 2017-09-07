@@ -25,7 +25,7 @@
 								<section class="entry-content cf">
 
 									<?php get_template_part( 'post-formats/format', get_post_format() ); ?>
-									<a href="/press" class="fa fa-arrow-circle-left return"><span> &nbsp;Return to Press</span></a>
+									<a href="javascript:history.go(-1)" class="fa fa-arrow-circle-left return"><span> &nbsp;Return</span></a>
 
 								</section> <!-- end article section -->
 
