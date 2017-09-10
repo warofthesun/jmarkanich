@@ -523,6 +523,17 @@ FONT FACE (IN YOUR FACE)
 .ti-logo-bug:before {
   content: "\61"; }
 
+.logo-bug-add:before {
+  content: " ";
+  margin-right: .4em;
+  display: inline-block;
+  background-image: url(../images/logo-bug.png);
+  background-size: contain;
+  width: 50px;
+  height: 41px;
+  background-repeat: no-repeat;
+  margin-bottom: -10px; }
+
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
@@ -1604,13 +1615,37 @@ a.return {
 .post-page .page-title {
   margin-bottom: 1em; }
 
+.blog .page-title {
+  color: #97a59c;
+  font-family: georgia, serif;
+  font-variant: small-caps;
+  letter-spacing: .13em; }
+
 .page-title:before {
-  content: "\61";
-  display: block;
-  font-size: .7em; }
+  content: " ";
+  margin-right: .4em;
+  display: inline-block;
+  background-image: url(../images/logo-bug.png);
+  background-size: contain;
+  width: 65px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin-bottom: -10px; }
+
+.logo-bug-add:before {
+  content: " ";
+  margin-right: .4em;
+  display: inline-block;
+  background-image: url(../images/logo-bug.png);
+  background-size: contain;
+  width: 50px;
+  height: 41px;
+  background-repeat: no-repeat;
+  margin-bottom: -10px; }
 
 .page-title.logo-bug:before {
-  content: ""; }
+  content: "";
+  display: none; }
 
 .page-title {
   padding: 0;
@@ -2495,11 +2530,6 @@ you can add resource intensive styles.
     text-align: left; }
     .page-title.logo-bug {
       text-align: left; }
-    .page-title:before {
-      content: "\61";
-      margin-left: -.9em;
-      margin-right: .4em;
-      display: none; }
 
   /*********************
   NAVIGATION STYLES

@@ -103,6 +103,17 @@ FONT FACE (IN YOUR FACE)
 .ti-logo-bug:before {
   content: "\61"; }
 
+.logo-bug-add:before {
+  content: " ";
+  margin-right: .4em;
+  display: inline-block;
+  background-image: url(../images/logo-bug.png);
+  background-size: contain;
+  width: 50px;
+  height: 41px;
+  background-repeat: no-repeat;
+  margin-bottom: -10px; }
+
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
@@ -344,11 +355,6 @@ HEADER STYLES
   text-align: left; }
   .page-title.logo-bug {
     text-align: left; }
-  .page-title:before {
-    content: "\61";
-    margin-left: -.9em;
-    margin-right: .4em;
-    display: none; }
 
 /*********************
 NAVIGATION STYLES

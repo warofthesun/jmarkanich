@@ -600,6 +600,16 @@ body#tinymce.wp-editor {
     -moz-osx-font-smoothing: grayscale; }
   body#tinymce.wp-editor .ti-logo-bug:before {
     content: "\61"; }
+  body#tinymce.wp-editor .logo-bug-add:before {
+    content: " ";
+    margin-right: .4em;
+    display: inline-block;
+    background-image: url(../images/logo-bug.png);
+    background-size: contain;
+    width: 50px;
+    height: 41px;
+    background-repeat: no-repeat;
+    margin-bottom: -10px; }
   body#tinymce.wp-editor p {
     -ms-word-wrap: break-word;
     word-break: break-word;
