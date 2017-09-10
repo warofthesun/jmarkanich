@@ -17,7 +17,7 @@
 								while ( $loop->have_posts() ) : $loop->the_post();
 									echo '<a href="';
 									the_permalink();
-									echo '" class="m-all t-1of3 d-1of3 press_page">';
+									echo '" class="m-all t-1of4 d-1of4 press_page">';
 									echo '<img src="';
 									the_post_thumbnail_url('press_page_thumbnail');
 									echo '" width="100%"><div class="press_title">';
