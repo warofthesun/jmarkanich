@@ -31,7 +31,7 @@
 					?>
 					</div>
 					<?php endwhile; ?>
-						<main id="main" class="m-all t-2of3 d-2of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-3of3 d-3of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 								<?php the_content(); ?>
 							<?php endwhile; ?>
@@ -53,7 +53,9 @@
 							<?php endif; ?>
 
 						</main>
-						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail('sidebar_image') ?></div>
+						<!--
+						<div class="m-all t-1of3 d-1of3 cf sidebar-image"><?php the_post_thumbnail(//'sidebar_image') ?></div>
+					-->
 				</div>
 
 			</div>
