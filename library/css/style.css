@@ -1498,6 +1498,10 @@ body {
   -webkit-transition: all .5s;
   text-decoration: none; }
 
+.portfolio_text {
+  font-size: 1.8em;
+  line-height: 1.2em; }
+
 .divider {
   border-top: 0.5px solid #57403F;
   margin-top: 4em;
@@ -2498,6 +2502,9 @@ you can add resource intensive styles.
     height: 316px;
     width: auto; }
 
+  .portfolio_text {
+    font-size: 1.5em; }
+
   .press_page img {
     transition: all .5s; }
   .press_page img:hover {
@@ -2677,7 +2684,10 @@ you can add resource intensive styles.
     height: 315px; }
 
   .portfolio_image {
-    height: 416px; } }
+    height: 416px; }
+
+  .portfolio_text {
+    font-size: 2.2em; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

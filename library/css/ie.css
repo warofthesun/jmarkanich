@@ -323,6 +323,9 @@ LAYOUT & GRID STYLES
   height: 316px;
   width: auto; }
 
+.portfolio_text {
+  font-size: 1.5em; }
+
 .press_page img {
   transition: all .5s; }
 .press_page img:hover {
@@ -496,6 +499,9 @@ be seen on the Desktop.
 
 .portfolio_image {
   height: 416px; }
+
+.portfolio_text {
+  font-size: 2.2em; }
 
 /*
 you can call the larger styles if you want, but there's really no need
