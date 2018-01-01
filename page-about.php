@@ -56,21 +56,27 @@
 							<?php endif; ?>
 
 						</main>
+						<?php if( get_field('image_one') ): ?>
 						<?php
 							$imageArray = get_field('image_one'); // Array returned by Advanced Custom Fields
 							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 						?>
 						<div class="m-all t-1of3 d-1of3 image-row"><img src="<?php echo $imageThumbURL;?>"></div>
+					<?php endif
+						if( get_field('image_two') ): ?>
 						<?php
 							$imageArray = get_field('image_two'); // Array returned by Advanced Custom Fields
 							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 						?>
 						<div class="m-all t-1of3 d-1of3 image-row"><img src="<?php echo $imageThumbURL;?>"></div>
+					<?php endif;
+						 if( get_field('image_three') ): ?>
 						<?php
 							$imageArray = get_field('image_three'); // Array returned by Advanced Custom Fields
 							$imageThumbURL = esc_url($imageArray['sizes']['portfolio_gallery_thumbnail']); //grab from the array, the 'sizes', and from it, the 'thumbnail'
 						?>
 						<div class="m-all t-1of3 d-1of3 image-row"><img src="<?php echo $imageThumbURL;?>"></div>
+					<?php endif; ?>
 				</div>
 
 			</div>
